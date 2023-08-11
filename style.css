@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: linear-gradient(135deg,#153677,#4e085f);
+     */
+     background: linear-gradient(135deg,#D8B5FF,#1EAE98);
+}
+
+
+
+.container{
+    max-width: 540px;
+    position: absolute;
+    border: 1px solid black;
+    /* background: #fff;
+     */
+    
+     /* background-image: linear-gradient(to right, #7bc393, #31b7c2);  */
+     background-image: linear-gradient(to right, #d3cce3, #e9e4f0); 
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.header{
+    display: flex;
+    margin:15px 10px;
+}
+
+.header span>img{
+    height: 30px;
+    width: 30px;
+    margin-left: 10px;
+    position: relative;
+    top: 6px;
+
+}
+
+.container .header h2{
+ margin-left: 8px;
+ color: #002765;
+
+}
+
+
+
+
+.input-text{
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px;
+    margin-bottom: 25px;
+    background-color: #edeef0;
+}
+
+.input-text button{
+border: none;
+outline: none;
+padding: 20px 50px;
+border-radius: 40px;
+color: #fff;
+background-color: rgb(247, 106, 55);
+font-size: 12px;
+cursor: pointer;
+}
+
+.input-text input{
+ flex: 1;
+ background: transparent;
+ border: none;
+outline: none;
+font-size: 12px;
+padding: 10px;
+}
+
+
+
+ ul li{
+ list-style: none;
+ font-size: 16px;
+ padding: 12px 8px 12px 40px;
+ user-select: none;
+ cursor: pointer;
+ position: relative;
+}
+
+ ul li::before{
+    content:' ';
+    position: absolute;
+    height: 25px;
+    width:25px;
+    border-radius: 50%;
+    background-image:  url(/stop.png);
+    background-size: cover;
+    background-position: center;
+    top:10px;
+    left: 8px;
+}
+
+
+ul li.checked{
+    text-decoration: line-through;
+    color:#555;
+}
+
+ul li.checked::before{
+    content:' ';
+    position: absolute;
+    height: 25px;
+    width:25px;
+    border-radius: 50%;
+    background-image:  url(/checklist.png);
+    background-size: cover;
+    background-position: center;
+    top:10px;
+    left: 8px;
+}
+
+
+ul li span{
+    position: absolute;
+    right:0;
+    top:5px;
+    width:40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+   border-radius: 50%;
+}
+
+
+ul li span:hover{
+ background-color: darkgrey;
+}
